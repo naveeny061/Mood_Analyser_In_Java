@@ -9,6 +9,10 @@ public class TestAnalyser {
 		MoodAnalyser moodAnalyser=new MoodAnalyser("I am in Sad Mood");
 			Assert.assertEquals("SAD",moodAnalyser.analyseMood());
 	}
-	
+	@Test
+	public void given_InHappyMood_thenShouldBeHappyMood() {
+		MoodAnalyser moodAnalyser=new MoodAnalyser("I am in any Mood");
+			Assert.assertEquals("HAPPY",moodAnalyser.analyseMood());
+	}
 
 }
